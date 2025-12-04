@@ -10,6 +10,8 @@ const slides = [
       "Switch to VR for immersive under‑bridge inspection.",
       "Use AI panels to review defects alongside the 3D view.",
     ],
+    gradient:
+      "bg-gradient-to-b from-sky-200 via-sky-300/40 to-slate-900", // blue
   },
   {
     url: "https://app.d3d.ai/models/view/bridge-measure-45",
@@ -20,6 +22,8 @@ const slides = [
       "Attach annotations with screenshots and comments.",
       "Export annotated views for reports and approvals.",
     ],
+    gradient:
+      "bg-gradient-to-b from-amber-200 via-amber-300/40 to-slate-900", // light yellow
   },
   {
     url: "https://app.d3d.ai/models/view/tunnel-collab-09",
@@ -30,6 +34,8 @@ const slides = [
       "Track who added which note and when.",
       "Keep all discussion anchored to the actual geometry.",
     ],
+    gradient:
+      "bg-gradient-to-b from-orange-200 via-orange-300/40 to-slate-900", // light orange
   },
 ];
 
@@ -77,7 +83,7 @@ const Experiences = () => {
 
       {/* Main frame */}
       <div className="mt-8 rounded-[30px] bg-[#050814] border border-[#1f2933] shadow-[0_0_45px_rgba(56,189,248,0.5)] overflow-hidden">
-        <div className="relative aspect-video bg-gradient-to-b from-sky-200 to-slate-900">
+        <div className={`relative aspect-video ${active.gradient}`}>
           {/* Left info panel (slide content) */}
           <div className="absolute left-0 top-0 h-full w-1/3 bg-white/95">
             <div className="h-12 border-b border-slate-200 flex items-center px-4 text-xs font-semibold text-slate-700">
