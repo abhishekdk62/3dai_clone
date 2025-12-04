@@ -45,7 +45,7 @@ const Experiences = () => {
   useEffect(() => {
     const id = setInterval(
       () => setActiveIndex((prev) => (prev + 1) % slides.length),
-      6000
+      2000
     );
     return () => clearInterval(id);
   }, []);
